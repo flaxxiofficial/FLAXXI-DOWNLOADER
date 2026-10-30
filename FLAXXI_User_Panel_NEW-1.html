@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FLAXXI — Premium Video Downloader</title>
+<meta name="description" content="FLAXXI Premium Video Downloader — Fast, secure video and audio downloading.">
+<meta name="robots" content="index, follow">
+<!-- Google Search Console: replace YOUR_SEARCH_CONSOLE_VERIFICATION_CODE with the code from Search Console -->
+<meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_VERIFICATION_CODE">
+<!-- Google AdSense: replace ca-pub-XXXXXXXXXXXXXXXX with your approved publisher ID -->
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+  crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+:root{--bg:#06050d;--card:#0e0b1c;--card2:#141022;--text:#fff;--muted:#9995ad;--line:#34205c;--a:#7c2cff;--b:#ff149f;--c:#08a9ff;--good:#00e89a}
+*{box-sizing:border-box}html,body{margin:0;background:radial-gradient(circle at 10% 15%,#25104c 0,transparent 32%),radial-gradient(circle at 90% 55%,#06263a 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100%}
+body:before{content:"";position:fixed;inset:-20%;background:conic-gradient(from 180deg,transparent,#8a2be233,transparent,#00b7ff22,transparent);filter:blur(70px);animation:spin 16s linear infinite;pointer-events:none;z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-5px)}}@keyframes pop{from{opacity:0;transform:scale(.96) translateY(14px)}to{opacity:1;transform:none}}@keyframes glow{50%{box-shadow:0 0 30px #8b2cff66,0 0 60px #ff149f22}}
+@keyframes shine{to{background-position:220% center}}
+button,input,select{font:inherit}.app{max-width:760px;margin:auto;padding-bottom:60px}.top{height:105px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #27193d;background:#07060eea;backdrop-filter:blur(18px);position:sticky;top:0;z-index:20}.brand{display:flex;align-items:center;gap:13px}.logo{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;font-size:31px;background:linear-gradient(135deg,#8b35ff,#ff149f);box-shadow:0 0 28px #9b2fff88;animation:float 3s ease-in-out infinite}.brand h1{font-size:28px;margin:0;font-weight:800}.brand small{display:block;color:#8e899f;margin-top:3px}.dots{width:58px;height:58px;border-radius:18px;border:1px solid #30233f;background:#11101a;color:#fff;font-size:25px;cursor:pointer;transition:.2s}.dots:active{transform:scale(.92)}
+main{padding:52px 20px}.badge{display:inline-flex;padding:12px 21px;border:1px solid #7231c9;border-radius:30px;background:#140d25;color:#cdaeff;box-shadow:0 0 25px #7d2cff22}.badge i{color:#ff5fe0;margin-right:9px}
+.hero{text-align:center}.hero h2{font-size:52px;line-height:1.05;margin:38px auto 22px;max-width:620px;letter-spacing:-2px}.hero h2 span{background:linear-gradient(90deg,#fff,#08c8ff,#8d58ff);-webkit-background-clip:text;color:transparent;background-size:200%;animation:shine 5s linear infinite}.hero p{font-size:21px;color:#9691a4}.platforms{display:flex;justify-content:center;gap:16px;margin:38px 0}.platform{width:72px;height:72px;border:1px solid #4b2380;border-radius:19px;background:#0c0918;display:grid;place-items:center;font-size:28px;cursor:pointer;transition:.2s}.platform:hover{transform:translateY(-5px);border-color:#b45cff;box-shadow:0 0 25px #812cff55}.platform.active{box-shadow:0 0 25px #812cff66;border-color:#b45cff}
+.panel{border:1px solid #7738d0;border-radius:28px;padding:24px;background:linear-gradient(145deg,#100b20e8,#090816e8);box-shadow:0 0 45px #6f2cff18;animation:glow 5s ease-in-out infinite}.urlrow{display:flex;gap:10px;border:1px solid #7738d0;border-radius:18px;padding:8px;background:#0d0a18}.urlrow i{font-size:26px;padding:14px;color:#cbb5e7}.urlrow input{flex:1;min-width:0;background:none;border:0;outline:0;color:#fff;font-size:18px}.paste{width:58px;border:0;border-radius:15px;background:#24105a;color:#fff;font-size:22px;cursor:pointer}.status{margin:17px 4px;font-weight:700}.dot{color:var(--good);margin-right:9px}
+.detect{display:none;align-items:center;gap:10px;border:1px solid #2d1c50;border-radius:14px;padding:11px 14px;margin-bottom:16px;background:#0b0914}.detect.show{display:flex;animation:pop .25s ease}.detect .brandicon{font-size:22px}.quality,.mode{border:1px solid #2c1d48;border-radius:18px;padding:17px;margin-top:14px;background:#0c0915;cursor:pointer;transition:.2s}.mode{display:flex;align-items:center;justify-content:space-between}.mode:hover,.mode.active{border-color:#a74cff;box-shadow:0 0 22px #922cff22}.mode strong{font-size:21px}.mode small{display:block;color:#898397;margin-top:6px}.quality select{width:100%;background:transparent;color:#fff;border:0;outline:0}.download{width:100%;margin-top:20px;padding:20px;border:0;border-radius:18px;color:#fff;font-size:20px;font-weight:800;background:linear-gradient(100deg,#0a9dff,#713cff,#ff159f);background-size:220%;cursor:pointer;transition:.2s;box-shadow:0 10px 30px #6f25ff33}.download:hover{background-position:100%;transform:translateY(-2px)}.download:active{transform:scale(.98)}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}.feature{padding:25px;border:1px solid #28203b;border-radius:22px;background:#0e0c16cc}.feature i{font-size:25px;color:#b56cff}.feature h3{margin:16px 0 7px}.feature p{color:#8d8999;margin:0;line-height:1.5}
+.overlay{position:fixed;inset:0;background:#000b;backdrop-filter:blur(13px);display:none;align-items:flex-end;justify-content:center;z-index:100}.overlay.show{display:flex}.modal{width:min(680px,94vw);max-height:88vh;overflow:auto;border:1px solid #6f31c4;border-radius:28px 28px 0 0;background:#0d0b17;padding:26px;box-shadow:0 -20px 80px #772cff33;animation:pop .25s ease}.modalhead{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#191623;color:#fff;width:48px;height:48px;border-radius:15px;cursor:pointer;font-size:20px}.menuitem{display:flex;align-items:center;gap:18px;padding:20px;margin-top:14px;border:1px solid #242032;border-radius:20px;background:#100e19;cursor:pointer;transition:.2s}.menuitem:hover{border-color:#7e3fe0;transform:translateX(4px)}.mi{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:#24134c;color:#c58cff;font-size:21px}.menuitem b{font-size:18px}.menuitem small{display:block;color:#888394;margin-top:5px}.form input,.form select{width:100%;padding:16px;border:1px solid #30263f;border-radius:15px;background:#12101c;color:#fff;outline:0;margin:8px 0 14px}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tab{padding:15px;border:1px solid #30263f;border-radius:15px;background:#11101a;color:#aaa;cursor:pointer}.tab.active{background:linear-gradient(90deg,#7c2cff,#ff149f);color:#fff}.authbtn{width:100%;padding:17px;border:0;border-radius:16px;background:linear-gradient(90deg,#159cff,#8a2cff,#ff149f);color:#fff;font-weight:800;cursor:pointer;margin-top:8px}.google{background:#fff;color:#222}.plans{display:grid;gap:14px}.plan{padding:18px;border:1px solid #30263f;border-radius:20px;background:#11101b}.plan.selected{border-color:#ff2bc4;box-shadow:0 0 24px #ff149f22}.planrow{display:flex;justify-content:space-between;align-items:center}.price{font-size:22px;font-weight:800}.plan button{width:100%;margin-top:13px}.history{color:#aaa}.empty{text-align:center;padding:30px;color:#777}.toast{position:fixed;left:50%;bottom:25px;transform:translateX(-50%) translateY(20px);opacity:0;padding:13px 18px;border:1px solid #6032a2;background:#141020;color:#fff;border-radius:14px;z-index:300;transition:.25s}.toast.show{opacity:1;transform:translateX(-50%)}@media(max-width:600px){.hero h2{font-size:44px}.features{grid-template-columns:1fr}.brand h1{font-size:25px}.platform{width:64px;height:64px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="brand"><div class="logo">⚡</div><div><h1>FLAXXI</h1><small>Premium Video Downloader</small></div></div><button class="dots" id="menuBtn">⋮</button></header>
+<main>
+<section class="hero">
+<div class="badge"><i class="fa-solid fa-circle"></i> PREMIUM DOWNLOADER</div>
+<h2>Download Videos<br><span>From Anywhere</span></h2><p>Fast · Secure · No Watermark</p>
+<div class="platforms">
+<button class="platform active" data-p="youtube" title="YouTube"><i class="fa-brands fa-youtube"></i></button>
+<button class="platform" data-p="tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></button>
+<button class="platform" data-p="facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></button>
+<button class="platform" data-p="instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></button>
+</div>
+</section>
+<section class="panel">
+<div class="urlrow"><i class="fa-solid fa-link"></i><input id="url" autocomplete="off" placeholder="Paste your video URL here..."><button class="paste" id="paste" title="Paste"><i class="fa-regular fa-clipboard"></i></button></div>
+<div class="status" id="status"><span class="dot">●</span>Waiting for URL</div>
+<div class="detect" id="detect"><span class="brandicon" id="brandIcon"></span><b id="detected">Platform detected</b><span style="color:#00e89a">• Detected automatically</span></div>
+<div class="mode active" id="videoMode"><div><strong>🎬 Video Download</strong><small>Up to 8K quality</small></div><i class="fa-solid fa-circle-check"></i></div>
+<div class="mode" id="audioMode"><div><strong>🎵 Audio Download</strong><small>High quality audio</small></div><i class="fa-regular fa-circle"></i></div>
+<div class="quality"><select id="quality"><option>8K</option><option>4K</option><option>2K</option><option>1080p</option><option>720p</option><option>480p</option><option>360p</option></select></div>
+<button class="download" id="download"><i class="fa-solid fa-download"></i> Download</button>
+</section>
+<section class="features"><div class="feature"><i class="fa-solid fa-bolt"></i><h3>Fast Download</h3><p>High speed and stable processing.</p></div><div class="feature"><i class="fa-solid fa-shield-halved"></i><h3>100% Secure</h3><p>Your account and history stay protected by Firebase rules.</p></div><div class="feature"><i class="fa-solid fa-crown"></i><h3>Premium Quality</h3><p>HD, 4K and 8K options when your backend supports them.</p></div><div class="feature"><i class="fa-solid fa-mobile-screen"></i><h3>Any Device</h3><p>Responsive design for Android, iPhone and desktop.</p></div></section>
+</main>
+</div>
+
+<div class="overlay" id="overlay"><div class="modal" id="modal"></div></div><div class="toast" id="toast"></div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
+import {getDatabase,ref,set,push,onValue} from "https://www.gstatic.com/firebasejs/13.1.0/firebase-database.js";
+import {getAuth,GoogleAuthProvider,signInWithPopup,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut,RecaptchaVerifier,signInWithPhoneNumber,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
+
+/* Firebase: databaseURL was supplied by you. For Google/Phone auth, paste the
+   rest of your Web App config from Firebase Console into the fields below. */
+const firebaseConfig={
+  apiKey:"PASTE_FIREBASE_WEB_API_KEY",
+  authDomain:"flaxxi-23171.firebaseapp.com",
+  projectId:"flaxxi-23171",
+  storageBucket:"flaxxi-23171.firebasestorage.app",
+  messagingSenderId:"PASTE_MESSAGING_SENDER_ID",
+  appId:"PASTE_FIREBASE_WEB_APP_ID",
+  databaseURL:"https://flaxxi-23171-default-rtdb.firebaseio.com"
+};
+const firebaseReady=!firebaseConfig.apiKey.startsWith("PASTE_")&&!firebaseConfig.appId.startsWith("PASTE_");
+let app,db,auth;
+try{if(firebaseReady){app=initializeApp(firebaseConfig);db=getDatabase(app);auth=getAuth(app)}}catch(e){console.warn(e)}
+const $=s=>document.querySelector(s), toast=m=>{let t=$("#toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2400)};
+const overlay=$("#overlay"),modal=$("#modal"); const open=h=>{modal.innerHTML=h;overlay.classList.add("show")}; const close=()=>overlay.classList.remove("show");
+overlay.addEventListener("click",e=>{if(e.target===overlay)close()});
+
+const platformMap={
+ youtube:{name:"YouTube",icon:'<i class="fa-brands fa-youtube" style="color:#ff0033"></i>',test:/youtube\.com|youtu\.be/i},
+ tiktok:{name:"TikTok",icon:'<i class="fa-brands fa-tiktok"></i>',test:/tiktok\.com/i},
+ facebook:{name:"Facebook",icon:'<i class="fa-brands fa-facebook" style="color:#1877f2"></i>',test:/facebook\.com|fb\.watch/i},
+ instagram:{name:"Instagram",icon:'<i class="fa-brands fa-instagram" style="color:#ff4fb3"></i>',test:/instagram\.com/i}
+};
+function detect(u){
+ let key=Object.keys(platformMap).find(k=>platformMap[k].test.test(u));
+ document.querySelectorAll(".platform").forEach(x=>x.classList.toggle("active",x.dataset.p===key));
+ if(key){$("#detect").classList.add("show");$("#brandIcon").innerHTML=platformMap[key].icon;$("#detected").textContent=platformMap[key].name;$("#status").innerHTML='<span class="dot">●</span>URL detected'}
+ else{$("#detect").classList.remove("show");$("#status").innerHTML='<span class="dot">●</span>Waiting for URL'}
+ return key;
+}
+$("#url").addEventListener("input",e=>detect(e.target.value));
+document.querySelectorAll(".platform").forEach(b=>b.onclick=()=>{document.querySelectorAll(".platform").forEach(x=>x.classList.remove("active"));b.classList.add("active");toast(b.title+" selected")});
+$("#paste").onclick=async()=>{try{$("#url").value=await navigator.clipboard.readText();detect($("#url").value);toast("URL pasted")}catch{toast("Clipboard permission not available")}};
+$("#videoMode").onclick=()=>{$("#videoMode").classList.add("active");$("#audioMode").classList.remove("active");$("#videoMode i").className="fa-solid fa-circle-check";$("#audioMode i").className="fa-regular fa-circle"};
+$("#audioMode").onclick=()=>{$("#audioMode").classList.add("active");$("#videoMode").classList.remove("active");$("#audioMode i").className="fa-solid fa-circle-check";$("#videoMode i").className="fa-regular fa-circle"};
+
+async function saveHistory(item){
+ if(!firebaseReady||!db){let h=JSON.parse(localStorage.flaxxiHistory||"[]");h.unshift(item);localStorage.flaxxiHistory=JSON.stringify(h.slice(0,50));return}
+ const uid=auth?.currentUser?.uid||"guest";
+ await push(ref(db,"users/"+uid+"/history"),item);
+}
+$("#download").onclick=async()=>{
+ const url=$("#url").value.trim(); if(!url)return toast("Please paste a video URL");
+ const p=detect(url); if(!p)return toast("Supported: YouTube, TikTok, Facebook or Instagram");
+ const mode=$("#audioMode").classList.contains("active")?"audio":"video";
+ const item={url,platform:p,mode,quality:mode==="audio"?"audio":$("#quality").value,createdAt:Date.now()};
+ await saveHistory(item); toast("Download request saved. Connect your backend/API to start the real download.");
+ /* REAL DOWNLOAD: replace this demo with your server endpoint.
+    Never put privileged downloader/API secrets in this browser file. */
+};
+
+function menu(){
+ open(`<div class="modalhead"><div><h2 style="margin:0">FLAXXI Menu</h2><p style="color:#8d889b">Manage your account and downloads</p></div><button class="close" id="x">×</button></div>
+ <div class="menuitem" id="login"><span class="mi"><i class="fa-solid fa-user"></i></span><div><b>Login / Account</b><small>Gmail, email or phone number</small></div></div>
+ <div class="menuitem" id="plans"><span class="mi"><i class="fa-solid fa-crown"></i></span><div><b>Premium Plans</b><small>1 Day · 7 Days · 1 Month · 1 Year</small></div></div>
+ <div class="menuitem" id="history"><span class="mi"><i class="fa-solid fa-clock-rotate-left"></i></span><div><b>Download History</b><small>Your saved downloads</small></div></div>
+ <div class="menuitem" id="settings"><span class="mi"><i class="fa-solid fa-gear"></i></span><div><b>Settings</b><small>Downloader preferences</small></div></div>`);
+ $("#x").onclick=close;$("#login").onclick=login;$("#plans").onclick=plans;$("#history").onclick=history;$("#settings").onclick=settings;
+}
+$("#menuBtn").onclick=menu;
+
+function login(){
+ open(`<div class="modalhead"><div><h2>⚡ Welcome Back</h2><p style="color:#8d889b">Login to your FLAXXI account</p></div><button class="close" id="x">×</button></div>
+ <div class="tabs"><button class="tab active" id="gmailTab">✉ Gmail</button><button class="tab" id="phoneTab">📱 Phone Number</button></div>
+ <div class="form" id="loginForm"><label>Email address</label><input id="email" type="email" placeholder="you@gmail.com"><label>Password</label><input id="pass" type="password" placeholder="Enter your password"><button class="authbtn" id="emailLogin">Login</button><div style="text-align:center;margin:14px;color:#777">or</div><button class="authbtn google" id="googleLogin"><i class="fa-brands fa-google"></i> Continue with Google</button><p style="text-align:center;color:#777;font-size:12px;margin-top:14px">Firebase Authentication must be enabled in your project.</p></div>
+ <div class="form" id="phoneForm" style="display:none"><label>Phone number</label><input id="phone" placeholder="+9779819833267"><div id="recaptcha"></div><button class="authbtn" id="sendOtp">Send OTP</button><div id="otpBox" style="display:none"><label>OTP</label><input id="otp" inputmode="numeric" placeholder="6-digit OTP"><button class="authbtn" id="verifyOtp">Verify OTP</button></div></div>`);
+ $("#x").onclick=close;$("#gmailTab").onclick=()=>{showTab(true)};$("#phoneTab").onclick=()=>{showTab(false)};
+ const showTab=g=>{$("#gmailTab").classList.toggle("active",g);$("#phoneTab").classList.toggle("active",!g);$("#loginForm").style.display=g?"block":"none";$("#phoneForm").style.display=g?"none":"block"};
+ $("#emailLogin").onclick=async()=>{if(!auth)return toast("Add the full Firebase Web config first");try{await signInWithEmailAndPassword(auth,$("#email").value,$("#pass").value);toast("Login successful");close()}catch(e){toast(e.message)}};
+ $("#googleLogin").onclick=async()=>{if(!auth)return toast("Add the full Firebase Web config first");try{await signInWithPopup(auth,new GoogleAuthProvider());toast("Google login successful");close()}catch(e){toast(e.message)}};
+ if(auth){window.recaptchaVerifier=new RecaptchaVerifier(auth,"recaptcha",{size:"normal"});}
+ $("#sendOtp").onclick=async()=>{if(!auth)return toast("Add the full Firebase Web config first");try{window.confirmationResult=await signInWithPhoneNumber(auth,$("#phone").value,window.recaptchaVerifier);$("#otpBox").style.display="block";toast("OTP sent")}catch(e){toast(e.message)}};
+ $("#verifyOtp").onclick=async()=>{try{await window.confirmationResult.confirm($("#otp").value);toast("Phone login successful");close()}catch(e){toast(e.message)}};
+}
+function plans(){
+ const ps=[["1 Day","₹19"],["7 Days","₹49"],["1 Month","₹99"],["1 Year","₹499"]];
+ open(`<div class="modalhead"><div><h2>👑 Premium Plans</h2><p style="color:#8d889b">Unlock the full power of FLAXXI</p></div><button class="close" id="x">×</button></div><div class="plans">${ps.map((p,i)=>`<div class="plan ${i===2?"selected":""}"><div class="planrow"><div><b style="font-size:20px">${p[0]}</b><div style="color:#8d889b;margin-top:5px">HD/4K · Priority processing · No ads</div></div><span class="price">${p[1]}</span></div><button class="authbtn" data-plan="${p[0]}">Choose ${p[0]}</button></div>`).join("")}</div>`);
+ $("#x").onclick=close;modal.querySelectorAll("[data-plan]").forEach(b=>b.onclick=()=>{const msg=encodeURIComponent("Hello FLAXXI, I want to purchase the "+b.dataset.plan+" plan.");window.open("https://wa.me/9779819833267?text="+msg,"_blank")});
+}
+async function history(){
+ let items=[];
+ if(firebaseReady&&db&&auth?.currentUser){await new Promise(res=>onValue(ref(db,"users/"+auth.currentUser.uid+"/history"),s=>{items=[];s.forEach(x=>items.unshift(x.val()));res()}, {onlyOnce:true}))}
+ else items=JSON.parse(localStorage.flaxxiHistory||"[]");
+ open(`<div class="modalhead"><div><h2>🕘 Download History</h2><p style="color:#8d889b">${items.length} saved item(s)</p></div><button class="close" id="x">×</button></div>${items.length?items.map(x=>`<div class="menuitem"><span class="mi">${platformMap[x.platform]?.icon||"🎬"}</span><div><b>${x.platform||"Video"} · ${x.mode||"video"}</b><small>${x.quality||""} · ${new Date(x.createdAt).toLocaleString()}</small></div></div>`).join(""):'<div class="empty">No downloads yet.</div>'}`);
+ $("#x").onclick=close;
+}
+function settings(){open(`<div class="modalhead"><div><h2>⚙️ Settings</h2><p style="color:#8d889b">FLAXXI preferences</p></div><button class="close" id="x">×</button></div><div class="menuitem" id="clear"><span class="mi"><i class="fa-solid fa-trash"></i></span><div><b>Clear local history</b><small>Only browser demo history</small></div></div><div class="menuitem" id="logout"><span class="mi"><i class="fa-solid fa-right-from-bracket"></i></span><div><b>Logout</b><small>Sign out from Firebase</small></div></div>`);$("#x").onclick=close;$("#clear").onclick=()=>{localStorage.removeItem("flaxxiHistory");toast("Local history cleared")};$("#logout").onclick=async()=>{if(auth)await signOut(auth);toast("Logged out");close()}}
+
+if(auth)onAuthStateChanged(auth,u=>{if(u)console.log("Signed in:",u.uid)});
+</script>
+<!-- Google AdSense ad slot: replace ca-pub-XXXXXXXXXXXXXXXX and data-ad-slot after AdSense approval -->
+<div class="card" style="margin:18px auto;max-width:900px;text-align:center">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+       data-ad-slot="XXXXXXXXXX"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
+<script>
+  try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+</script>
+</body>
+</html>

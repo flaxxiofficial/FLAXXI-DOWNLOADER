@@ -1,0 +1,42 @@
+FLAXXI Firebase setup
+======================
+
+Files:
+1) flaxxi_user_panel.html  - public/user UI
+2) flaxxi_admin_panel.html  - separate admin UI
+3) firebase-rules.json      - starting Realtime Database rules
+
+Firebase database URL already inserted:
+https://flaxxi-23171-default-rtdb.firebaseio.com
+
+IMPORTANT:
+The database URL alone is NOT enough for Google/phone/email authentication.
+In Firebase Console:
+Project settings -> Your apps -> Web app -> copy the complete firebaseConfig.
+Replace these placeholders in BOTH HTML files:
+PASTE_FIREBASE_WEB_API_KEY
+PASTE_MESSAGING_SENDER_ID
+PASTE_FIREBASE_WEB_APP_ID
+
+Enable:
+Authentication -> Sign-in method:
+- Email/Password
+- Google
+- Phone
+
+For Phone auth, configure reCAPTCHA and authorized domains.
+
+Admin security:
+1. Create the admin user in Firebase Authentication.
+2. After you know the admin user's UID, create:
+admins
+  ADMIN_UID: true
+Do this from a trusted/admin environment or Firebase console/import; do not make admins writable by the browser.
+3. Publish firebase-rules.json in Realtime Database Rules.
+
+WhatsApp:
+The user panel currently uses +9779819833267 as the default purchase contact.
+Admin settings writes the editable number to /settings/whatsapp.
+
+Real downloader:
+The HTML is the UI + Firebase data layer. Actual YouTube/TikTok/Facebook/Instagram media downloading needs a server-side downloader/API endpoint. Put that endpoint behind your backend; do not put private API keys in HTML.
